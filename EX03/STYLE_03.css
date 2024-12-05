@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header, main, aside, footer{
+    padding: 10px 30px;
+}
+header, footer{
+    background-color: rgb(64, 64, 64);
+    color: white;
+}
+main, aside{
+    color: black;
+    flex: 1;
+}
+main{
+    background-color: rgb(208, 208, 208);
+}
+aside{
+    background-color: rgb(188, 188, 188);
+}
+section{
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    section{
+        flex-direction: row;
+    }
+}
+@media (min-width: 900px) {
+    section{
+        flex-direction: row;
+    }
+    main{
+        flex: 2;
+    }
+    aside{
+        flex: 1;
+    }
+}
